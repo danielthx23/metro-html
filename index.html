@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="w-full sticky bg-grayish-blue px-4 py-08">
-        <nav class="w-full flex items-center justify-between">
+        <nav class="w-full flex items-center justify-between lilita-one-regular">
             <form action="" class="flex justify-between items-center rounded-full">
                 <input type="text" placeholder="Buscar..." class="bg-gray-input border-none outline-none rounded-full w-24 py-08 px-2 pr-4 text-lg shadow-lg">
                 <button type="submit" class="button-reset flex items-center space-x-minus-4 gap-1">
@@ -39,10 +40,17 @@
         </nav>
     </header>
     <main>
-        <header class="bg-gray-input w-full">
-            <figure class="container bg-white flex justify-center">
-                <img src="./public/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
-            </figure>
+        <header class="w-full">
+            <div class="bg-gray-input w-full">
+                <figure class="bg-gray-input container bg-white flex justify-center">
+                    <img src="./public/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
+                </figure>
+            </div>
+            <div class="bg-white w-full">
+                <div class="bg-teal container flex justify-center py-1">
+                    <h1 class="text-white oleo-script-regular text-3xl">Bem Vindo ao Smart Mobility</h1>
+                </div>
+            </div>
         </header>
     </main>
     <footer>
