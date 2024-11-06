@@ -44,12 +44,20 @@
     height: 100%;
 }
 
+.h-4 {
+    height: 4rem;
+}
+
 .text-white {
     color: white;  
 }
 
 .text-black {
     color: black;
+}
+
+.text-red {
+    color: red;
 }
 
 .text-neutral-800 {
@@ -124,6 +132,10 @@
     background-color: #E2DEDC;
 }
 
+.bg-neutral-800 {
+    background-color: rgb(117, 117, 117);
+}
+
 .bg-white {
     background-color: white;
 }
@@ -146,6 +158,10 @@
 
 .items-center {
     align-items: center;
+}
+
+.items-end {
+    align-items: end;
 }
 
 .justify-center {
@@ -240,6 +256,10 @@
 
 .border-none {
     border: none;
+} 
+
+.border-bottom-1 {
+    border-bottom: 1px solid black;
 }
 
 .rounded-full {
