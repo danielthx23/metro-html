@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 110;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-24 {
+    width: 24rem;
+}
+
+.w-18 {
+    width: 18rem;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.text-white {
+    color: white;  
+}
+
+.text-black {
+    color: black;
+}
+
+.text-2xl {
+    font-size: 1.8rem;
+} 
+
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.2rem;
+}
+
+.text-md {
+    font-size: 0.9rem;
+}
+
+.text-sm {
+    font-size: 0.6rem;
+}
+
+.text-xs {
+    font-size: 0.3rem;
+}
+
+.bg-grayish-blue {
+    background-color: #3E5179;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-gray-input {
+    background-color: #E2DEDC;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-05 {
+    gap: 0.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.px-4 {
+    padding-inline: 4rem;
+}
+
+.px-1 {
+    padding-inline: 1rem;
+}
+
+.px-2 {
+    padding-inline: 2rem;
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
+.py-08 {
+    padding-block: 0.8rem;
+}
+
+.button-reset {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.border-none {
+    border: none;
+}
+
+.rounded-full {
+    border-radius: 999rem;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.divide-y-2 {
+    width: 1px;                  
+    height: 2rem;              
+}
+
+.border-white {
+    border-color: white;
+}
+
+.border-black {
+    border-color: black;            
+}
+
+
+.space-x-minus-4 {
+    margin-left: -4rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
