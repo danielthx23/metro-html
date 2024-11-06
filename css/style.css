@@ -24,6 +24,10 @@
     width: 24rem;
 }
 
+.w-6 {
+    width: 6rem;
+}
+
 .w-18 {
     width: 18rem;
 }
@@ -42,6 +46,34 @@
 
 .text-black {
     color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.placeholder-neutral-400 {
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    rgb(169, 169, 169);
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    rgb(169, 169, 169);
+       opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    rgb(169, 169, 169);
+       opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    rgb(169, 169, 169);
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+       color:    rgb(169, 169, 169);
+    }
+    
+    &::placeholder { /* Most modern browsers support this now. */
+       color:    rgb(169, 169, 169);
+    }
 }
 
 .text-3xl {
@@ -100,6 +132,10 @@
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .items-center {
     align-items: center;
 }
@@ -112,6 +148,10 @@
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
 .gap-05 {
     gap: 0.5rem;
 }
@@ -122,6 +162,22 @@
 
 .gap-2 {
     gap: 2rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-x-4 {
+    column-gap: 4rem;
+}
+
+.gap-y-1 {
+    row-gap: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
 }
 
 .px-4 {
@@ -140,12 +196,24 @@
     padding-right: 4rem;
 }
 
+.py-04 {
+    padding-block: 0.4rem;
+}
+
 .py-08 {
     padding-block: 0.8rem;
 }
 
 .py-1 {
     padding-block: 1rem;
+}
+
+.py-2 {
+    padding-block: 2rem;
+}
+
+.m-1 {
+    margin: 1rem;
 }
 
 .button-reset {
@@ -164,6 +232,10 @@
 
 .rounded-full {
     border-radius: 999rem;
+}
+
+.rounded-md {
+    border-radius: 0.5rem;
 }
 
 .decoration-none {
@@ -195,4 +267,20 @@
 .container {
     width: 80%;
     margin-inline: auto;
+}
+
+.icon-container {
+    text-decoration: none;
+    color: black;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
 }

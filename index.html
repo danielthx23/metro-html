@@ -16,7 +16,7 @@
     <header class="w-full sticky bg-grayish-blue px-4 py-08">
         <nav class="w-full flex items-center justify-between lilita-one-regular">
             <form action="" class="flex justify-between items-center rounded-full">
-                <input type="text" placeholder="Buscar..." class="bg-gray-input border-none outline-none rounded-full w-24 py-08 px-2 pr-4 text-lg shadow-lg">
+                <input type="text" placeholder="Buscar..." class="placeholder-neutral-400 lilita-one-regular bg-gray-input border-none outline-none rounded-full w-24 py-04 px-2 pr-4 text-lg shadow-lg">
                 <button type="submit" class="button-reset flex items-center space-x-minus-4 gap-1">
                     <hr class="divide-y-2 border-black">
                     <i class="fa-solid fa-magnifying-glass fa-xl"></i>
@@ -52,9 +52,46 @@
                 </div>
             </div>
         </header>
+        <section class="grid grid-cols-3 gap-x-4 gap-y-1 bg-gray-input m-1 p-2 rounded-md">
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <i class="fa-solid fa-route fa-6x"></i>
+                <p class="text-xl">Rotas e Destinos</p>
+            </a>
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <i class="fa-solid fa-location-dot fa-6x"></i>
+                <p class="text-xl">Minha localização</p>
+            </a>
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <img class="w-6 h-auto" src="./public/logo_metro.png" alt="Logo do metro">
+                <p class="text-xl">Mapa das estações</p>
+            </a>
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <img class="w-6 h-auto" src="./public/chat_metro.png" alt="Icone chat metro">
+                <p class="text-xl">ChatMêtro</p>
+            </a>
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <i class="fa-solid fa-magnifying-glass fa-6x"></i>
+                <p class="text-xl">Clique para ver o que tem perto de vocês</p>
+            </a>
+            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
+                <img class="w-6 h-auto" src="./public/qr_code.png" alt="Escanei o QRcode para acessar o SmartMobility em seu dispositivo">
+                <p class="text-xl">Escanei o QRcode para acessar o SmartMobility em seu dispositivo</p>
+            </a>
+        </section>
     </main>
-    <footer>
-
+    <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1">
+        <div class="flex flex-col">
+            <div class="flex text-white gap-1 items-center lilita-one-regular">
+                <p>Mêtro Smart <i class="fa-regular fa-copyright"></i> 2024</p>
+                <hr class="divide-y-2 border-white">
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
