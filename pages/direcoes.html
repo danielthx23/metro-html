@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="w-full sticky bg-grayish-blue px-4 py-08">
@@ -43,41 +43,42 @@
         <header class="w-full">
             <div class="bg-gray-input w-full">
                 <figure class="bg-gray-input container bg-white flex justify-center">
-                    <img src="./public/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
+                    <img src="../public/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
                 </figure>
             </div>
             <div class="bg-white w-full">
-                <div class="bg-teal container flex justify-center py-1">
-                    <h1 class="text-white oleo-script-regular text-3xl">Bem Vindo ao Smart Mobility</h1>
+                <div class="bg-teal container grid grid-cols-7 justify-center">
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-house fa-3x"></i>
+                        <p >Home</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-comment fa-3x"></i>
+                        <p >ChatMetrô</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-map-marker-alt fa-3x"></i>
+                        <p >Destino</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-location-arrow fa-3x"></i>
+                        <p >Localização</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <img class="w-3 h-auto" src="../public/logo_metro.png" alt="Logo do metro">
+                        <p >Metrô</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-route fa-3x"></i>
+                        <p >Área tour</p>
+                    </a>
+                    <a href="" class="text-white decoration-none flex flex-col justify-between items-center gap-05 flex-col text-center p-1 border-x-1 lilita-one-regular text-lg">
+                        <i class="fa-solid fa-utensils fa-3x"></i>
+                        <p >Food services</p>
+                    </a>
                 </div>
-            </div>
+            </div>            
         </header>
-        <section class="grid grid-cols-3 gap-x-4 gap-y-1 bg-gray-input m-1 p-2 rounded-md">
-            <a href="./pages/direcoes.html" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <i class="fa-solid fa-route fa-6x"></i>
-                <p class="text-xl">Rotas e Destinos</p>
-            </a>
-            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <i class="fa-solid fa-location-dot fa-6x"></i>
-                <p class="text-xl">Minha localização</p>
-            </a>
-            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <img class="w-6 h-auto" src="./public/logo_metro.png" alt="Logo do metro">
-                <p class="text-xl">Mapa das estações</p>
-            </a>
-            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <img class="w-6 h-auto" src="./public/chat_metro.png" alt="Icone chat metro">
-                <p class="text-xl">ChatMêtro</p>
-            </a>
-            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <i class="fa-solid fa-magnifying-glass fa-6x"></i>
-                <p class="text-xl">Clique para ver o que tem perto de vocês</p>
-            </a>
-            <a href="" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center">
-                <img class="w-6 h-auto" src="./public/qr_code.png" alt="Escanei o QRcode para acessar o SmartMobility em seu dispositivo">
-                <p class="text-xl">Escanei o QRcode para acessar o SmartMobility em seu dispositivo</p>
-            </a>
-        </section>
     </main>
     <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1">
         <div class="flex flex-col gap-05">
@@ -87,9 +88,9 @@
                 <p>Privacy Policy</p>
             </div>
             <div class="flex gap-05">
-                <a class="text-neutral-800" href=""><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a class="text-neutral-800" href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a class="text-neutral-800" href=""><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                <a class="text-neutral-800" href=""><i class="fa-brands fa-facebook fa-3xl"></i></a>
+                <a class="text-neutral-800" href=""><i class="fa-brands fa-instagram fa-3xl"></i></a>
+                <a class="text-neutral-800" href=""><i class="fa-brands fa-x-twitter fa-3xl"></i></a>
             </div>
         </div>
     </footer>

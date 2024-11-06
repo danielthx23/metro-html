@@ -24,6 +24,10 @@
     width: 24rem;
 }
 
+.w-3 {
+    width: 3rem;
+}
+
 .w-6 {
     width: 6rem;
 }
@@ -46,6 +50,10 @@
 
 .text-black {
     color: black;
+}
+
+.text-neutral-800 {
+    color: rgb(20, 20, 20);
 }
 
 .text-center {
@@ -176,6 +184,10 @@
     row-gap: 1rem;
 }
 
+.p-1 {
+    padding: 1rem;
+}
+
 .p-2 {
     padding: 2rem;
 }
@@ -247,6 +259,10 @@
     height: 2rem;              
 }
 
+.border-x-1 {
+    border-inline: 1px solid black;
+}
+
 .border-white {
     border-color: white;
 }
@@ -283,4 +299,9 @@
 
 .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+
+.grid-cols-7 {
+    grid-template-columns: repeat(7, 1fr);
 }
