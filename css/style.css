@@ -24,6 +24,10 @@
     width: 24rem;
 }
 
+.w-1 {
+    width: 1rem;
+}
+
 .w-3 {
     width: 3rem;
 }
@@ -36,12 +40,28 @@
     width: 18rem;
 }
 
+.w-1-5 {
+    width: 1.5rem;
+}
+
+.w-4 {
+    width: 4rem;
+}
+
 .h-auto {
     height: auto;
 }
 
 .h-full {
     height: 100%;
+}
+
+.h-1 {
+    height: 1rem;
+}
+
+.h-1-5 {
+    height: 1.5rem;
 }
 
 .h-4 {
@@ -144,8 +164,57 @@
     background-color: #5BC7CA;
 }
 
+.bg-blue {
+    background-color: blue;
+  }
+  
+  .bg-green {
+    background-color: green;
+  }
+  
+  .bg-red {
+    background-color: red;
+  }
+  
+  .bg-yellow {
+    background-color: yellow;
+  }
+  
+  .bg-lilac {
+    background-color: #C8A2C8;
+  }
+  
+  .bg-ruby {
+    background-color: #9B111E; 
+  }
+  
+  .bg-turquoise {
+    background-color: #40E0D0; 
+  }
+  
+  .bg-coral {
+    background-color: #FF7F50; 
+  }
+  
+  .bg-sapphire {
+    background-color: #0F52BA; 
+  }
+  
+  .bg-jade {
+    background-color: #00A86B; 
+  }
+  
+  .bg-silver {
+    background-color: #C0C0C0; 
+  }
+  
+
 .sticky {
     position: sticky;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .flex {
@@ -200,6 +269,18 @@
     row-gap: 1rem;
 }
 
+.p-01 {
+    padding: 0.1rem;
+}
+
+.p-02 {
+    padding: 0.2rem;
+}
+
+.p-05 {
+    padding: 0.5rem;
+}
+
 .p-1 {
     padding: 1rem;
 }
@@ -244,6 +325,10 @@
     margin: 1rem;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 .button-reset {
     outline: none;
     border: none;
@@ -258,6 +343,10 @@
     border: none;
 } 
 
+.border-dotted {
+    border-style: dotted;
+}
+
 .border-bottom-1 {
     border-bottom: 1px solid black;
 }
@@ -268,6 +357,15 @@
 
 .rounded-md {
     border-radius: 0.5rem;
+}
+
+.rounded-sm {
+    border-radius: 0.25rem;
+}
+
+.rounded-t-md {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .decoration-none {
@@ -291,6 +389,17 @@
     border-color: black;            
 }
 
+.border-neutral-300 {
+    border-color: rgb(199, 199, 199);
+}
+
+.space-x-minus-1 {
+    margin-left: -1rem;
+}
+
+.space-x-minus-3 {
+    margin-left: -3rem;
+}
 
 .space-x-minus-4 {
     margin-left: -4rem;
@@ -321,7 +430,18 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .grid-cols-7 {
     grid-template-columns: repeat(7, 1fr);
+}
+
+.list-none {
+    list-style: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

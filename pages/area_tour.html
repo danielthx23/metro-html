@@ -79,44 +79,28 @@
                 </div>
             </div>            
         </header>
-        <div class="flex bg-gray-input p-2">
-            <div class="bg-white">
-                <aside class="w-24">
-                    <div class="flex items-end h-4 px-1 w-full bg-neutral-800 text-white">
-                        <h3 class="w-full">Direções</h3>
-                        <h3 class="w-full">Linhas</h3>
-                    </div>
-                    <form id="routeForm" class="flex gap-1 p-2">
-                        <div class="flex flex-col gap-2 items-center justify-center">
-                            <i class="fa-solid fa-circle"></i>
-                            <hr class="divide-y-2 divide-black absolute border-dotted">
-                            <i class="fa-solid fa-circle text-red"></i>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="startLocation" placeholder="Escolha seu local de partida" class="w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="endLocation" placeholder="Escolha o seu destino" class="w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                        </div>
-                    </form>
-                    <p class="text-center px-2">Adicione seu local de origem e seu destino para obter uma lista das melhores rotas   </p>
-                </aside>  
-            </div>
-    
-            <div class="m-1 bg-gray-input w-full">
-                <iframe
-                    id="mapIframe"
-                    width="100%"
-                    height="700"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyC5QsQ9OvxX1V-V0sKoGMmBCDgBbJ1FO44&center=-23.55052,-46.633308&zoom=12">
-                </iframe>
-            </div>
+        <div class="bg-teal w-full flex flex-col items-center justify-center p-2 gap-1">
+            <h2>Olha que legal!</h2>
+            <h2>Perto da sua região, tem vários lugares para você conhecer</h2>
+            <h1 class="mb-1">Clique para ver melhor</h1>
+            <section class="grid grid-cols-4 gap-4 mb-1">
+                <div>
+                    <h3 class="w-full bg-blue text-md text-white flex justify-center p-1 text-md rounded-t-md">MASP</h3>
+                    <img class="w-24" src="../public/masp.png" alt="">
+                </div>
+                <div>
+                    <h3 class="w-full bg-blue text-md text-white flex justify-center p-1 text-md rounded-t-md">SHOPPING CIDADE SÃO PAULO</h3>
+                    <img class="w-24" src="../public/shopping_cidade.png" alt="">
+                </div>
+                <div>
+                    <h3 class="w-full bg-blue text-md text-white flex justify-center p-1 text-md rounded-t-md">SHOPPING PATIO PAULISTA</h3>
+                    <img class="w-24" src="../public/shopping_paulista.png" alt="">
+                </div>
+                <div>
+                    <h3 class="w-full bg-blue text-md text-white flex justify-center p-1 text-md rounded-t-md">PARQUE TENENTE SIQUEIRA CAMPOS</h3>
+                    <img class="w-24" src="../public/parque_tenente.png" alt="">
+                </div>
+            </section>
         </div>
     </main>
     <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1">
