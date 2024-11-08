@@ -32,6 +32,10 @@
     width: 1rem;
 }
 
+.w-10 {
+    width: 10rem;
+}
+
 .w-2 {
     width: 2rem;
 }
@@ -72,8 +76,20 @@
     height: 1rem;
 }
 
+.h-10 {
+    height: 10rem;
+}
+
 .h-24 {
     height: 20rem;
+}
+
+.h-16 {
+    height: 16rem;
+}
+
+.h-18 {
+    height: 18rem;
 }
 
 .h-48 {
@@ -714,6 +730,10 @@
 
     .md\:items-center {
         align-items: center;
+    }
+    
+    .md\:gap-8 {
+        gap: 8rem;
     }
 
 }
