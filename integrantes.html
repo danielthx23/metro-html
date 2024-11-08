@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Página dos integrantes -->
     <header class="w-full sticky bg-grayish-blue px-4 md:px-2 py-08">
         <nav class="w-full flex sm:flex-col items-center justify-between lilita-one-regular">
             <form action="" class="flex justify-between items-center rounded-full sm:hidden">
@@ -25,7 +26,7 @@
             <ul class="md:hidden lg:hidden sm:flex sm:items-center justify-between w-full">
                 <li><i class="fa-solid fa-bars text-white"></i></li>
                 <li></li>
-                <li><img class="w-4" src="../public/icones_logos/logo.png" alt="Logo smart mobility"></li>
+                <li><img class="w-4" src="./public/icones_logos/logo.png" alt="Logo smart mobility"></li>
                 <li class="flex items-center gap-1"><i class="fa-solid fa-language text-2xl text-white sm:text-md"></i><i class="fa-solid fa-magnifying-glass fa-xl text-white sm:text-md"></i></li>
             </ul>
             <ul class="text-white flex items-center gap-2 md:gap-1 sm:w-full">
@@ -45,91 +46,36 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <header class="w-full mb-1">
-            <div class="bg-gray-input w-full sm:hidden">
-                <figure class="bg-gray-input container bg-white flex justify-center">
-                    <img src="../public/icones_logos/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
-                </figure>
-            </div>
-            <div class="bg-white w-full sm:hidden">
-                <div class="bg-teal container grid grid-cols-7 justify-center">
-                    <a href="../index.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white border-x-1 py-04 lilita-one-regular text-md">
-                        <i class="fa-solid fa-house fa-2x text-black sm:text-lg"></i>
-                        <p class="sm:text-sm">Home</p>
-                    </a>
-                    <a href="./chat_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/chat_metro.png" alt="Logo do chatbot">
-                        <p class="sm:text-sm">ChatMetrô</p>
-                    </a>
-                    <a href="./direcoes.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-route fa-2x text-black sm:text-lg"></i>
-                        <p class="sm:text-sm">Destino</p>
-                    </a>
-                    <a href="./localizacao.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-map-marker-alt fa-2x text-black sm:text-lg"></i>
-                        <p class="sm:text-sm">Localização</p>
-                    </a>
-                    <a href="./mapa_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/logo_metro.png" alt="Logo do metro">
-                        <p class="sm:text-sm">Metrô</p>
-                    </a>
-                    <a href="./area_tour.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-regular fa-map fa-2x text-black sm:text-lg"></i>
-                        <p class="sm:text-sm">Área tour</p>
-                    </a>
-                    <a href="./food_services.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-utensils fa-2x text-black sm:text-lg"></i>
-                        <p class="sm:text-sm">Food services</p>
-                    </a>
-                </div>
-            </div> 
-        </header>
-        <!-- Form e menu para futuramente usar uma api do google maps -->
-        <div class="flex bg-gray-input md:flex-col md:items-center">
-            <div class="bg-white m-1 sm:m-0">
-                <aside class="w-24 md:w-full">
-                    <div class="flex items-end h-4 px-1 w-full bg-neutral-800 text-white">
-                        <a href="./direcoes.html" class="text-white w-full decoration-none">
-                            <h3 class="w-full sm:text-md">Direções</h3>
-                        </a>
-                        <a href="./direcoes_linhas.html" class="text-white w-full decoration-none">
-                            <h3 class="w-full sm:text-md">Linhas</h3>
-                        </a>
-                    </div>
-                    <form id="routeForm" class="flex gap-1 p-2">
-                        <div class="flex flex-col gap-2 items-center justify-center">
-                            <i class="fa-solid fa-circle"></i>
-                            <hr class="divide-y-2 divide-black absolute border-dotted">
-                            <i class="fa-solid fa-circle text-red"></i>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="startLocation" placeholder="Escolha seu local de partida" class="sm:text-sm w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="endLocation" placeholder="Escolha o seu destino" class="sm:text-sm w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                        </div>
-                    </form>
-                    <p class="text-center px-2 mb-4 sm:text-md">Adicione seu local de origem e seu destino para obter uma lista das melhores rotas   </p>
-                </aside>  
-            </div>
-    
-            <div class="m-1 bg-gray-input w-full">
-                <!-- API do Google Maps -->
-                <iframe
-                    id="mapIframe"
-                    width="100%"
-                    height="700"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyC5QsQ9OvxX1V-V0sKoGMmBCDgBbJ1FO44&center=-23.55052,-46.633308&zoom=12">
-                </iframe>
-            </div>
+    <main class="p-2">
+        <p>Nomes: Lucas Aurelio de Brito Chicote | Lucas Gomes de Araujo Lopes | Alexis Ronaldo Quirijota Rondo</p>
+        <p>RM: RM Lucas Chicote: 559366 | RM Lucas Lopes: 559607 | RM Alexis Rondo: 560384</p>
+        <p>Turma: 1TDSPA</p>
+        <p>Links: https://github.com/ChallengeSprintCCR</p>
+        <p>Usuário para o GitHub: challengesprint@gmail.com</p>
+        <p>Senha: Challenge@Sprint123</p>
+        <div class="grid grid-cols-3 gap-x-4 p-2">
+            <figure>
+                <img src="" alt="Foto de Alexis">
+                <figcaption class="text-center bg-blue text-white p-1">
+                    Alexis Rondo
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Foto de Lucas">
+                <figcaption class="text-center bg-blue text-white p-1">
+                    Lucas Chicote
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="" alt="Foto de Lucas Gomes">
+                <figcaption class="text-center bg-blue text-white p-1">
+                    Lucas Gomes
+                </figcaption>
+            </figure>
         </div>
+        <p>Linkedin Alexis: https://www.linkedin.com/in/alexis-rondo-0866a3332/</p>
+        <p>Linkedin Lucas Chicote: https://www.linkedin.com/in/lucas-aurelio-de-brito-chicote-a5a169324</p>
+        <p>Linkedin Lucas Gomes: https://www.linkedin.com/in/lucas-gomes-36a529332/</p>
     </main>
     <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1 sm:text-sm">
         <div class="flex flex-col gap-05">
@@ -174,6 +120,6 @@
             <i class="fa-solid fa-utensils fa-2x text-black sm:text-lg"></i>
             <p class="sm:text-sm">Food services</p>
         </a>
-    </aside>
+</aside> 
 </body>
 </html>

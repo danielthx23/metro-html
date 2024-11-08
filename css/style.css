@@ -638,6 +638,10 @@
     .md\:w-10 {
         width: 10rem;
     }
+    
+    .md\:w-24 {
+        width: 24rem;
+    }
 
     .md\:h-10 {
         height: 10rem;
