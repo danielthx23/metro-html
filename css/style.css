@@ -708,8 +708,48 @@
 
 @media (max-width: 440px) {
 
+    .sm\:m-0 {
+        margin: 0;
+    }
+
+    .sm\:gap-2 {
+        gap: 2rem;
+    }
+
+    .sm\:w-2 {
+        width: 2rem;
+    }
+
+    .sm\:w-1 {
+        width: 1rem;
+    }
+
+    .sm\:h-1 {
+        height: 1rem;
+    }
+
+    .sm\:py-0 {
+        padding-block: 0;
+    }
+
+    .sm\:px-0 {
+        padding-inline: 0;
+    }
+
     .sm\:hidden {
         display: none;
+    }
+
+    .sm\:h-18 {
+        height: 18rem;
+    }
+
+    .sm\:h-24 {
+        height: 24rem;
+    }
+
+    .sm\:flex-row-reverse {
+        flex-direction: row-reverse;
     }
 
     .sm\:flex-col {
@@ -733,6 +773,10 @@
     }
     .sm\:w-full {
         width: 100%;
+    }
+
+    .sm\:h-full {
+        height: 100%;
     }
 
     .sm\:sticky {

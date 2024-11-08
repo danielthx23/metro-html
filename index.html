@@ -22,8 +22,11 @@
                     <i class="fa-solid fa-magnifying-glass fa-xl md:text-md"></i>
                 </button>
             </form>
-            <ul>
+            <ul class="md:hidden lg:hidden sm:flex sm:items-center justify-between w-full">
+                <li><i class="fa-solid fa-bars text-white"></i></li>
                 <li></li>
+                <li><img class="w-4" src="./public/icones_logos/logo.png" alt="Logo smart mobility"></li>
+                <li class="flex items-center gap-1"><i class="fa-solid fa-language text-2xl text-white sm:text-md"></i><i class="fa-solid fa-magnifying-glass fa-xl text-white sm:text-md"></i></li>
             </ul>
             <ul class="text-white flex items-center gap-2 md:gap-1 sm:w-full">
                 <li class="flex items-center sm:hidden">
@@ -49,7 +52,7 @@
                     <img src="./public/icones_logos/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
                 </figure>
             </div>
-            <div class="bg-white w-full lg:hidden sm:hidden">
+            <div class="bg-white w-full sm:hidden">
                 <div class="bg-teal container grid grid-cols-7 justify-center">
                     <a href="../index.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white border-x-1 py-04 lilita-one-regular text-md">
                         <i class="fa-solid fa-house fa-2x text-black sm:text-lg"></i>
@@ -89,33 +92,33 @@
         </header>
         <section class="p-1 md:p-0">
             <div class="grid grid-cols-3 gap-x-4 gap-y-1 bg-gray-input px-2 py-2 rounded-md md:grid-cols-1">
-                <h1 class="lg:hidden text-center w-full flex justify-center items-center py-2">
+                <h1 class="lg:hidden text-center w-full flex justify-center items-center py-2 sm:text-lg">
                     Aqui você pode aproveitar:
                 </h1>
-                <div class="lg:hidden grid grid-cols-4 gap-1">
-                    <div>
+                <div class="lg:hidden grid grid-cols-4 gap-1 sm:flex sm:flex-col">
+                    <div class="sm:flex">
                         <figure>
                             <img class="w-full" src="./public/images/card1.png" alt="Imagem card 1">
                         </figure>
-                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md">Melhor gestão para sua viagem</h1>
+                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md sm:text-sm sm:w-full sm:h-full">Melhor gestão para sua viagem</h1>
                     </div>  
-                    <div>
+                    <div class="sm:flex sm:flex-row-reverse">
                         <figure>
                             <img class="w-full" src="./public/images/card2.png" alt="Imagem card 2">
                         </figure>
-                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md">Uma fácil interação da interface</h1>
+                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md sm:text-sm sm:w-full sm:h-full">Uma fácil interação da interface</h1>
                     </div>  
-                     <div>
+                     <div class="sm:flex">
                         <figure>
                             <img class="w-full" src="./public/images/card3.png" alt="Imagem card 3">
                         </figure>
-                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md">Facilidade para se localizar nas linhas do metrô </h1>
+                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md sm:text-sm sm:w-full sm:h-full">Facilidade para se localizar nas linhas do metrô </h1>
                     </div>  
-                    <div>
+                    <div class="sm:flex sm:flex-row-reverse">
                         <figure>
                             <img class="w-full" src="./public/images/card4.png" alt="Imagem card 4">
                         </figure>
-                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md">E ótimos pontos turísticos para visitar </h1>
+                        <h1 class="bg-teal text-white px-04 py-04 text-lg text-center h-8 flex items-center lilita-one-regular rounded-b-md sm:text-sm sm:w-full sm:h-full">E ótimos pontos turísticos para visitar </h1>
                     </div>  
                 </div>
             <a href="./pages/direcoes.html" class="icon-container bg-teal flex justify-center items-center flex-col gap-2 py-2 px-1 rounded-md text-center md:hidden">
@@ -145,7 +148,7 @@
         </section>
         </div>
     </main>
-    <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1">
+    <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1 sm:text-sm">
         <div class="flex flex-col gap-05">
             <div class="flex text-white gap-1 items-center lilita-one-regular">
                 <p>Mêtro Smart <i class="fa-regular fa-copyright"></i> 2024</p>
@@ -188,7 +191,6 @@
             <i class="fa-solid fa-utensils fa-2x text-black sm:text-lg"></i>
             <p class="sm:text-sm">Food services</p>
         </a>
-    </div>
 </aside> 
 </body>
 </html>
