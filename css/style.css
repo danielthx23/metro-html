@@ -84,6 +84,10 @@
     height: 4rem;
 }
 
+.h-8 {
+    height: 8rem;
+}
+
 .text-white {
     color: white;  
 }
@@ -353,6 +357,10 @@
     padding: 2rem;
 }
 
+.px-04 {
+    padding-inline: 0.4rem;
+}
+
 .px-4 {
     padding-inline: 4rem;
 }
@@ -383,6 +391,10 @@
 
 .py-2 {
     padding-block: 2rem;
+}
+
+.py-6 {
+    padding-block: 6rem;
 }
 
 .m-1 {
@@ -438,6 +450,11 @@
 .rounded-t-md {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+}
+
+.rounded-b-md {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .decoration-none {
