@@ -20,12 +20,20 @@
     width: 100%;
 }
 
+.w-48 {
+    width: 48rem;
+}
+
 .w-24 {
     width: 24rem;
 }
 
 .w-1 {
     width: 1rem;
+}
+
+.w-2 {
+    width: 2rem;
 }
 
 .w-3 {
@@ -60,6 +68,14 @@
     height: 1rem;
 }
 
+.h-24 {
+    height: 20rem;
+}
+
+.h-48 {
+    height: 48rem;
+}
+
 .h-1-5 {
     height: 1.5rem;
 }
@@ -78,6 +94,10 @@
 
 .text-red {
     color: red;
+}
+
+.text-grayish-blue-200 {
+    color: #6C80A9;
 }
 
 .text-neutral-800 {
@@ -109,6 +129,30 @@
     
     &::placeholder { /* Most modern browsers support this now. */
        color:    rgb(169, 169, 169);
+    }
+}
+
+.placeholder-grayish-blue-200 {
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #6C80A9;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #6C80A9;
+       opacity:  1;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #6C80A9;
+       opacity:  1;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #6C80A9;
+    }
+    &::-ms-input-placeholder { /* Microsoft Edge */
+       color:    #6C80A9;
+    }
+    
+    &::placeholder { /* Most modern browsers support this now. */
+       color:    #6C80A9;
     }
 }
 
@@ -144,6 +188,14 @@
     background-color: #3E5179;
 }
 
+.bg-grayish-blue-200 {
+    background-color: #6C80A9;
+}
+
+.bg-grayish-blue-50 {
+    background-color: #C6D7EF;
+}
+
 .bg-transparent {
     background-color: transparent;
 }
@@ -165,6 +217,10 @@
 }
 
 .bg-blue {
+    background-color: blue;
+  }
+
+  .bg-blue-100 {
     background-color: blue;
   }
   
@@ -229,6 +285,10 @@
     align-items: center;
 }
 
+.items-start {
+    align-items: start;
+}
+
 .items-end {
     align-items: end;
 }
@@ -239,6 +299,10 @@
 
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: start;
 }
 
 .justify-end {
@@ -329,6 +393,10 @@
     margin-bottom: 1rem;
 }
 
+.ml-1 {
+    margin-left: 1rem;
+}
+
 .button-reset {
     outline: none;
     border: none;
@@ -353,6 +421,10 @@
 
 .rounded-full {
     border-radius: 999rem;
+}
+
+.rounded-circle {
+    border-radius: 100%;
 }
 
 .rounded-md {
@@ -426,6 +498,10 @@
     display: grid;
 }
 
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -444,4 +520,73 @@
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+@media (min-width: 1280px) {
+    .lg\:hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 834px) {
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:text-lg {
+        font-size: 1.2rem;
+    }
+
+    .md\:text-md {
+        font-size: 0.9rem;
+    }
+
+    .md\:text-sm {
+        font-size: 0.9rem;
+    }
+
+    .md\:p-0 {
+        padding: 0;
+    }
+
+    .md\:gap-1 {
+        gap: 1rem;
+    }
+
+    .md\:w-18 {
+        width: 18rem;
+    }
+
+    .md\:w-full {
+        width: 100%;
+    }
+
+    .md\:divide-y-1 {
+        width: 1px;                  
+        height: 1rem;              
+    }
+
+    .md\:space-x-minus-3 {
+        margin-left: -3rem;
+    }
+
+    .md\:bg-transparent {
+        background-color: transparent;
+    }
+
+    .md\:text-black {
+        color: black;
+    }
+
+    .md\:px-2 {
+        padding-inline: 2rem;
+    }
+
+    .md\:grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
 }

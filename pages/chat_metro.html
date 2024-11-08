@@ -81,49 +81,51 @@
                 </div>
             </div>            
         </header>
-        <div class="flex bg-gray-input p-2">
-            <div class="bg-white">
-                <aside class="w-24">
-                    <div class="flex items-end h-4 px-1 w-full bg-neutral-800 text-white">
-                        <a href="./direcoes.html" class="text-white w-full decoration-none">
-                            <h3 class="w-full">Direções</h3>
-                        </a>
-                        <a href="./direcoes_linhas.html" class="text-white w-full decoration-none">
-                            <h3 class="w-full">Linhas</h3>
-                        </a>
+            <div class="bg-teal w-full flex flex-col items-center justify-center">
+                <section>
+                    <div class="bg-grayish-blue-200 flex justify-center items-center w-48 p-2">
+                        <h1 class="text-center w-full text-lg text-white lilita-one-regular">ChatMetrô</h1>
+                        <button class="w-3 button-reset flex justify-center items-center"><i class="fa-solid fa-bars fa-2xl text-white"></i></button>
                     </div>
-                    <form id="routeForm" class="flex gap-1 p-2">
-                        <div class="flex flex-col gap-2 items-center justify-center">
-                            <i class="fa-solid fa-circle"></i>
-                            <hr class="divide-y-2 divide-black absolute border-dotted">
-                            <i class="fa-solid fa-circle text-red"></i>
-                        </div>
-                        <div class="flex flex-col gap-1 w-full">
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="startLocation" placeholder="Escolha seu local de partida" class="w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                            <label class="flex items-center gap-1">
-                                <input type="text" id="endLocation" placeholder="Escolha o seu destino" class="w-full py-04 border-none rounded border-bottom-1" required>
-                            </label>
-                        </div>
-                    </form>
-                    <p class="text-center px-2">Adicione seu local de origem e seu destino para obter uma lista das melhores rotas   </p>
-                </aside>  
+                    <div class="p-1 h-48 bg-grayish-blue-50 w-full flex flex-col gap-1">
+                        <ul class="w-full h-full list-none flex flex-col">
+                            <li class="w-full flex flex-col items-start gap-1">
+                                <img src="../public/icones_logos/chat_metro.png" alt="imagem chatbot" class="w-3">
+                                <p class="py-08 px-1 bg-grayish-blue rounded-md w-24 text-white">Olá, seja bem vindo ao ChatMetrô !</p>
+                            </li>
+                            <li class="w-full flex flex-col items-end gap-1">
+                                <i class="fa-solid fa-user p-1 rounded-circle bg-grayish-blue-200 flex justify-center items-center"></i>
+                                <p class="py-08 px-1 bg-grayish-blue-200 rounded-md w-24 text-black">Obrigado ! O que você é ?</p>
+                            </li>
+                            <li class="w-full flex flex-col items-start gap-1">
+                                <img src="../public/icones_logos/chat_metro.png" alt="imagem chatbot" class="w-3">
+                                <p class="py-08 px-1 bg-grayish-blue rounded-md w-24 text-white">Eu sou uma Inteligência Artificial programada para ajuda-lo em qualquer duvida possível sobre o metrô. </p>
+                            </li>
+                            <li class="w-full flex flex-col items-end gap-1">
+                                <i class="fa-solid fa-user p-1 rounded-circle bg-grayish-blue-200 flex justify-center items-center"></i>
+                                <p class="py-08 px-1 bg-grayish-blue-200 rounded-md w-24 text-black">Que legal ! Então qualquer duvida eu te chamo  </p>
+                            </li>
+                            <li class="w-full flex flex-col items-start gap-1">
+                                <img src="../public/icones_logos/chat_metro.png" alt="imagem chatbot" class="w-3">
+                                <p class="py-08 px-1 bg-grayish-blue rounded-md w-24 text-white">Ok ! Estou aqui para sua disposição </p>
+                            </li>
+                        </ul>
+                        <form class="w-full px-2 py-04 flex items-center justify-end bg-grayish-blue-200 rounded-md" action="">
+                                <input
+                                    class="w-full py-08 px-1 border-none rounded-md bg-grayish-blue px-2 lilita-one-regular text-lg text-white placeholder-grayish-blue-200"
+                                    placeholder="Digite aqui o que deseja"
+                                    type="text"
+                                >
+                                <button
+                                    class="absolute button-reset bg-grayish-blue-50 flex justify-center items-center rounded-full p-1"
+                                    type="submit"
+                                >
+                                    <i class="fa-solid fa-arrow-right text-white fa-xl"></i>
+                                </button>
+                        </form>
+                    </div>
+                </section>
             </div>
-    
-            <div class="m-1 bg-gray-input w-full">
-                <iframe
-                    id="mapIframe"
-                    width="100%"
-                    height="700"
-                    style="border:0"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyC5QsQ9OvxX1V-V0sKoGMmBCDgBbJ1FO44&center=-23.55052,-46.633308&zoom=12">
-                </iframe>
-            </div>
-        </div>
     </main>
     <footer class="flex justify-end w-full bg-grayish-blue py-2 px-1">
         <div class="flex flex-col gap-05">
