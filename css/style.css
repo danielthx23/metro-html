@@ -64,6 +64,10 @@
     height: 100%;
 }
 
+.h-fit {
+    height:fit-content;
+}
+
 .h-1 {
     height: 1rem;
 }
@@ -567,6 +571,10 @@
     .lg\:w-3 {
         width: 3rem;
     }
+
+    .lg\:h-24 {
+        height: 24rem;
+    }
 }
 
 @media (max-width: 834px) {
@@ -748,6 +756,10 @@
         height: 24rem;
     }
 
+    .sm\:h-64 {
+        height: 64rem;
+    }
+
     .sm\:flex-row-reverse {
         flex-direction: row-reverse;
     }
@@ -822,7 +834,58 @@
     .sm\:border-white {
         border-color: white;
     }
-    
 
+    .sm\:bg-white {
+        background-color: white;
+    }
+    
+    .sm\:bg-teal {
+        background-color: #5BC7CA;
+    }
+    
+    .sm\:bg-blue {
+        background-color: #2C5C9E;
+    }
+    
+    .sm\:bg-green {
+        background-color: #245825;
+    }
+    
+    .sm\:bg-red {
+        background-color: #DD221D;
+    }
+    
+    .sm\:bg-yellow {
+        background-color: #F2C037;
+    }
+    
+    .sm\:bg-lilac {
+        background-color: #9A75B4;
+    }
+    
+    .sm\:bg-ruby {
+        background-color: #963A69; 
+    }
+    
+    .sm\:bg-turquoise {
+        background-color: #387E8F; 
+    }
+    
+    .sm\:bg-coral {
+        background-color: #C74729; 
+    }
+    
+    .sm\:bg-sapphire {
+        background-color: #2E4B88; 
+    }
+    
+    .sm\:bg-jade {
+        background-color: #009850; 
+    }
+    
+    .sm\:bg-silver {
+        background-color: #8A8F93; 
+    }
+    
 
 }
