@@ -14,73 +14,76 @@
 </head>
 <body>
     <header class="w-full sticky bg-grayish-blue px-4 md:px-2 py-08">
-        <nav class="w-full flex items-center justify-between lilita-one-regular">
-            <form action="" class="flex justify-between items-center rounded-full">
+        <nav class="w-full flex sm:flex-col items-center justify-between lilita-one-regular">
+            <form action="" class="flex justify-between items-center rounded-full sm:hidden">
                 <input type="text" placeholder="Buscar..." class="placeholder-neutral-400 lilita-one-regular bg-gray-input border-none outline-none rounded-full w-24 md:w-18 py-04 px-2 pr-4 text-lg md:text-md shadow-lg">
                 <button type="submit" class="button-reset flex items-center space-x-minus-4 md:space-x-minus-3 gap-1">
                     <hr class="divide-y-2 border-black md:divide-y-1">
                     <i class="fa-solid fa-magnifying-glass fa-xl md:text-md"></i>
                 </button>
             </form>
-            <ul class="text-white flex items-center gap-2 md:gap-1">
-                <li class="flex items-center">
+            <ul>
+                <li></li>
+            </ul>
+            <ul class="text-white flex items-center gap-2 md:gap-1 sm:w-full">
+                <li class="flex items-center sm:hidden">
                     <button class="button-reset flex items-center justify-center">
                         <i class="fa-solid fa-language text-2xl md:text-lg text-white"></i>
                     </button>
                 </li>
-                <hr class="divide-y-2 border-white">
-                <li class="">
-                    <a class="text-lg md:text-sm decoration-none text-white" href="./pages/faq.html">FAQ</a>
+                <hr class="divide-y-2 border-white sm:hidden">
+                <li class="sm:w-full h-full sm:items-center sm:flex">
+                    <a class="text-lg md:text-sm decoration-none text-white sm:w-full sm:justify-center sm:flex" href="./pages/faq.html">FAQ</a>
                 </li>
-                <hr class="divide-y-2 border-white">
-                <li>
-                    <a class="text-lg md:text-sm decoration-none text-white" href="./pages/ajuda.html">Ajuda</a>
+                <hr class="divide-y-2 border-white sm:hidden">
+                <li class="sm:w-full h-full sm:items-center sm:flex">
+                    <a class="text-lg md:text-sm decoration-none text-white sm:w-full sm:justify-center sm:flex" href="./pages/ajuda.html">Ajuda</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <header class="w-full mb-1">
-            <div class="bg-gray-input w-full">
+            <div class="bg-gray-input w-full sm:hidden">
                 <figure class="bg-gray-input container bg-white flex justify-center">
                     <img src="./public/icones_logos/logo.png" alt="Logo Smart Mobility" class="w-18 h-auto">
                 </figure>
             </div>
-            <div class="bg-white w-full lg:hidden">
+            <div class="bg-white w-full lg:hidden sm:hidden">
                 <div class="bg-teal container grid grid-cols-7 justify-center">
-                    <a href="../index.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center border-x-1 py-04 lilita-one-regular text-md">
-                        <i class="fa-solid fa-house fa-2x text-black"></i>
-                        <p >Home</p>
+                    <a href="../index.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white border-x-1 py-04 lilita-one-regular text-md">
+                        <i class="fa-solid fa-house fa-2x text-black sm:text-lg"></i>
+                        <p class="sm:text-sm">Home</p>
                     </a>
-                    <a href="../pages/chat_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <img class="w-2 h-auto" src="../public/icones_logos/chat_metro.png" alt="Logo do chatbot">
-                        <p >ChatMetrô</p>
+                    <a href="../pages/chat_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/chat_metro.png" alt="Logo do chatbot">
+                        <p class="sm:text-sm">ChatMetrô</p>
                     </a>
-                    <a href="../pages/direcoes.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-route fa-2x text-black"></i>
-                        <p >Destino</p>
+                    <a href="../pages/direcoes.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <i class="fa-solid fa-route fa-2x text-black sm:text-lg"></i>
+                        <p class="sm:text-sm">Destino</p>
                     </a>
-                    <a href="../pages/localizacao.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-map-marker-alt fa-2x text-black"></i>
-                        <p >Localização</p>
+                    <a href="../pages/localizacao.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <i class="fa-solid fa-map-marker-alt fa-2x text-black sm:text-lg"></i>
+                        <p class="sm:text-sm">Localização</p>
                     </a>
-                    <a href="../pages/mapa_metro.html" class="text-white decoration-none flex flex-col jjustify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <img class="w-2 h-auto" src="../public/icones_logos/logo_metro.png" alt="Logo do metro">
-                        <p >Metrô</p>
+                    <a href="../pages/mapa_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/logo_metro.png" alt="Logo do metro">
+                        <p class="sm:text-sm">Metrô</p>
                     </a>
-                    <a href="../pages/area_tour.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-regular fa-map fa-2x text-black"></i>
-                        <p >Área tour</p>
+                    <a href="../pages/area_tour.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <i class="fa-regular fa-map fa-2x text-black sm:text-lg"></i>
+                        <p class="sm:text-sm">Área tour</p>
                     </a>
-                    <a href="../pages/food_services.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center py-04 border-x-1 lilita-one-regular text-md">
-                        <i class="fa-solid fa-utensils fa-2x text-black"></i>
-                        <p >Food services</p>
+                    <a href="../pages/food_services.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+                        <i class="fa-solid fa-utensils fa-2x text-black sm:text-lg"></i>
+                        <p class="sm:text-sm">Food services</p>
                     </a>
                 </div>
             </div> 
             <div class="bg-white w-full">
                 <div class="bg-teal container flex justify-center py-1 md:bg-transparent">
-                    <h1 class="text-white oleo-script-regular text-3xl md:text-black">Bem Vindo ao Smart Mobility</h1>
+                    <h1 class="text-white oleo-script-regular text-3xl md:text-black sm:text-lg">Bem Vindo ao Smart Mobility</h1>
                 </div>
             </div>
         </header>
@@ -156,5 +159,36 @@
             </div>
         </div>
     </footer>
+    <aside class="bg-teal container grid grid-cols-7 justify-center sm:w-full sm:py-1 sm:bg-grayish-blue sm:sticky sm:bottom-0 lg:hidden md:hidden sm:grid">
+        <a href="../index.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white border-x-1 py-04 lilita-one-regular text-md">
+            <i class="fa-solid fa-house fa-2x text-black sm:text-lg"></i>
+            <p class="sm:text-sm">Home</p>
+        </a>
+        <a href="../pages/chat_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/chat_metro.png" alt="Logo do chatbot">
+            <p class="sm:text-sm">ChatMetrô</p>
+        </a>
+        <a href="../pages/direcoes.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <i class="fa-solid fa-route fa-2x text-black sm:text-lg"></i>
+            <p class="sm:text-sm">Destino</p>
+        </a>
+        <a href="../pages/localizacao.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <i class="fa-solid fa-map-marker-alt fa-2x text-black sm:text-lg"></i>
+            <p class="sm:text-sm">Localização</p>
+        </a>
+        <a href="../pages/mapa_metro.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <img class="w-2 h-auto sm:w-1.2" src="../public/icones_logos/logo_metro.png" alt="Logo do metro">
+            <p class="sm:text-sm">Metrô</p>
+        </a>
+        <a href="../pages/area_tour.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <i class="fa-regular fa-map fa-2x text-black sm:text-lg"></i>
+            <p class="sm:text-sm">Área tour</p>
+        </a>
+        <a href="../pages/food_services.html" class="text-white decoration-none flex flex-col justify-center items-center flex-col text-center sm:border-white py-04 border-x-1 lilita-one-regular text-md">
+            <i class="fa-solid fa-utensils fa-2x text-black sm:text-lg"></i>
+            <p class="sm:text-sm">Food services</p>
+        </a>
+    </div>
+</aside> 
 </body>
 </html>

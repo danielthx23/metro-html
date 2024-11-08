@@ -582,10 +582,6 @@
     .md\:p-1 {
         padding: 1rem;
     } 
-    
-    .md\:text-lg {
-        font-size: 1.2rem;
-    }
 
     .md\:hidden {
         display: none;
@@ -639,12 +635,20 @@
         height: 10rem;
     }
 
+    .md\:h-auto {
+        height: auto;
+    }
+
     .md\:h-6 {
         height: 6rem;
     }
 
     .md\:h-4 {
         height: 4rem;
+    }
+
+    .md\:h-24 {
+        height: 24rem;
     }
 
     .md\:w-18 {
@@ -699,5 +703,82 @@
     .md\:items-center {
         align-items: center;
     }
+
+}
+
+@media (max-width: 440px) {
+
+    .sm\:hidden {
+        display: none;
+    }
+
+    .sm\:flex-col {
+        flex-direction: column;
+    }
+
+    .sm\:flex {
+        display: flex;
+    }
+
+    .sm\:items-center {
+        align-items: center;
+    }
+
+    .sm\:justify-center {
+        justify-content: center;
+    }
+
+    .sm\:grid {
+        display: grid;
+    }
+    .sm\:w-full {
+        width: 100%;
+    }
+
+    .sm\:sticky {
+        position: sticky;
+    }
+
+    .sm\:absolute {
+        position: absolute;
+    }
+
+    .sm\:bottom-0 {
+        bottom: 0;
+    }
+
+    .sm\:py-1 {
+        padding-block: 1rem;
+    }
+
+    .sm\:w-1\.2 {
+        width: 1.2rem;
+    }
+
+    .sm\:text-lg {
+        font-size: 1.2rem;
+    }
+
+    .sm\:text-md {
+        font-size: 0.9rem;
+    }
+
+    .sm\:text-sm {
+        font-size: 0.6rem;
+    }
+
+    .sm\:text-xs {
+        font-size: 0.4rem;
+    }
+    
+    .sm\:bg-grayish-blue {
+        background-color: #3E5179;
+    }
+    
+    .sm\:border-white {
+        border-color: white;
+    }
+    
+
 
 }
